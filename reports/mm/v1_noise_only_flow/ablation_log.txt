@@ -1,0 +1,8 @@
+﻿calibration: sigma_session=34.1 ticks, NSE sigma=0.0159, p_eff=2147 ticks, tick=4.66 bp
+chosen gH=0.1  (10s)
+ema: {'a_sig': -2.0}  (15s)
+rsi: {'a_rsi': 4.0}  (21s)
+breakout: {'vol_mult': 1.5, 'a_brk': -2.0, 'brk_pull': 3.0}  (33s)
+support_resistance: {'lvl_ticks': 3, 'a_sr': 4.0, 'hs_lvl': 0.0}  (41s)
+imbalance: {'a_imb': 2.0}  (45s)
+done in 84s -> C:\Users\OMEN\Documents\WorldQuant_Alpha_Scripts\alphalab\reports\mm

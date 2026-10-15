@@ -1,0 +1,39 @@
+﻿recording tapes ...
+  full_numba n=100000 reps=5
+  full_rust n=100000 reps=5
+  full_ref n=100000 reps=1
+  tape_numba n=100000 reps=5
+  tape_rust n=100000 reps=5
+  tape_ref n=100000 reps=1
+  full_numba n=1000000 reps=5
+  full_rust n=1000000 reps=5
+  full_ref n=1000000 reps=1
+  tape_numba n=1000000 reps=5
+  tape_rust n=1000000 reps=5
+  tape_ref n=1000000 reps=1
+  py_numba n=300000 reps=3
+  py_rust n=300000 reps=3
+  py_ref n=100000 reps=3
+mode               steps      cmds   best s  median s   Mcmd/s  Msteps/s  cold s  peak MB
+full_numba        100000     69710    0.005     0.006    12.87     18.46   20.06      601
+full_rust         100000     69710    0.004     0.004    17.42     24.99     nan       37
+full_ref          100000     69710    0.470     0.470     0.15      0.21     nan       35
+tape_numba        100000     69710    0.003     0.003    26.47     37.97    4.92      221
+tape_rust         100000     69710    0.003     0.003    27.22     39.05     nan       39
+tape_ref          100000     69710    0.082     0.082     0.85      1.22     nan       49
+full_numba       1000000    689674    0.035     0.036    19.98     28.96   20.21      603
+full_rust        1000000    689674    0.024     0.025    28.43     41.23     nan       45
+full_ref         1000000    689674    4.632     4.632     0.15      0.22     nan       45
+tape_numba       1000000    689674    0.017     0.018    39.93     57.90    4.84      239
+tape_rust        1000000    689674    0.011     0.012    60.07     87.10     nan       58
+tape_ref         1000000    689674    0.740     0.740     0.93      1.35     nan      211
+py_numba          300000    300000    0.088     0.089     3.42      3.42     nan      286
+py_rust           300000    300000    0.025     0.025    12.21     12.21     nan      128
+py_ref            100000    100000    0.075     0.080     1.33      1.33     nan       76
+
+Equivalence at scale (result vectors):
+  full  n=   100000: engines ['numba', 'ref', 'rust'] identical = True
+  full  n=  1000000: engines ['numba', 'ref', 'rust'] identical = True
+  tape  n=   100000: engines ['numba', 'ref', 'rust'] identical = True
+  tape  n=  1000000: engines ['numba', 'ref', 'rust'] identical = True
+ALL EQUIVALENT

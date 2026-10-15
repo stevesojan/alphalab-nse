@@ -1,0 +1,52 @@
+﻿recording tapes ...
+  tape 100000: 70471 commands in 19.8s
+  tape 1000000: 696788 commands in 0.1s
+  tape 10000000: 6973251 commands in 0.6s
+  full_numba n=100000 reps=5
+  full_rust n=100000 reps=5
+  full_ref n=100000 reps=1
+  tape_numba n=100000 reps=5
+  tape_rust n=100000 reps=5
+  tape_ref n=100000 reps=1
+  full_numba n=1000000 reps=5
+  full_rust n=1000000 reps=5
+  full_ref n=1000000 reps=1
+  tape_numba n=1000000 reps=5
+  tape_rust n=1000000 reps=5
+  tape_ref n=1000000 reps=1
+  full_numba n=10000000 reps=3
+  full_rust n=10000000 reps=3
+  tape_numba n=10000000 reps=3
+  tape_rust n=10000000 reps=3
+  py_numba n=300000 reps=3
+  py_rust n=300000 reps=3
+  py_ref n=100000 reps=3
+mode               steps      cmds   best s  median s   Mcmd/s  Msteps/s  cold s  peak MB
+full_numba        100000     70471    0.005     0.005    14.03     19.91   20.24      597
+full_rust         100000     70471    0.004     0.004    19.79     28.09     nan       37
+full_ref          100000     70471    0.256     0.256     0.28      0.39     nan       34
+tape_numba        100000     70471    0.002     0.003    29.73     42.18    4.95      222
+tape_rust         100000     70471    0.002     0.002    29.45     41.79     nan       39
+tape_ref          100000     70471    0.056     0.056     1.26      1.78     nan       49
+full_numba       1000000    696788    0.033     0.034    20.97     30.09   19.92      594
+full_rust        1000000    696788    0.020     0.021    34.22     49.11     nan       45
+full_ref         1000000    696788    2.645     2.645     0.26      0.38     nan       43
+tape_numba       1000000    696788    0.016     0.016    42.68     61.25    4.65      239
+tape_rust        1000000    696788    0.010     0.010    68.05     97.66     nan       57
+tape_ref         1000000    696788    0.533     0.533     1.31      1.88     nan      209
+full_numba      10000000   6973251    0.318     0.331    21.96     31.49   20.15      594
+full_rust       10000000   6973251    0.191     0.191    36.60     52.48     nan      124
+tape_numba      10000000   6973251    0.156     0.157    44.73     64.14    4.66      415
+tape_rust       10000000   6973251    0.088     0.096    79.10    113.43     nan      245
+py_numba          300000    300000    0.079     0.080     3.79      3.79     nan      283
+py_rust           300000    300000    0.021     0.022    13.96     13.96     nan      128
+py_ref            100000    100000    0.048     0.058     2.08      2.08     nan       76
+
+Equivalence at scale (result vectors):
+  full  n=   100000: engines ['numba', 'ref', 'rust'] identical = True
+  full  n=  1000000: engines ['numba', 'ref', 'rust'] identical = True
+  full  n= 10000000: engines ['numba', 'rust'] identical = True
+  tape  n=   100000: engines ['numba', 'ref', 'rust'] identical = True
+  tape  n=  1000000: engines ['numba', 'ref', 'rust'] identical = True
+  tape  n= 10000000: engines ['numba', 'rust'] identical = True
+ALL EQUIVALENT

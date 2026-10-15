@@ -1,0 +1,31 @@
+{
+ "nse_sigma_daily": 0.015886864577706817,
+ "nse_names": [
+  "HDFCBANK",
+  "RELIANCE",
+  "ICICIBANK",
+  "INFY",
+  "SBIN",
+  "ETERNAL",
+  "BHARTIARTL",
+  "GROWW",
+  "AXISBANK",
+  "BSE",
+  "TCS",
+  "KOTAKBANK",
+  "BAJFINANCE",
+  "TMPV",
+  "LT",
+  "M&M",
+  "ADANIENT",
+  "HAL",
+  "MAZDOCK",
+  "ITC"
+ ],
+ "sigma_ticks": 53.33249088478192,
+ "trades_per_session": 32442.322222222225,
+ "n_sessions": 177,
+ "p_eff": 3357.0180336037192,
+ "tick_bp": 2.9788341617173613,
+ "day_steps": 400000
+}

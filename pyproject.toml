@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alphalab"
+version = "0.1.0"
+description = "NSE alpha research framework and limit-order-book market-making simulator"
+requires-python = ">=3.13"
+dependencies = [
+    "polars",
+    "numpy",
+    "scipy",
+    "pyarrow",
+    "numba",
+    "matplotlib",
+    "yfinance",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "maturin", "psutil"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: long-running tests"]

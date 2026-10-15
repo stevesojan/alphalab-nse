@@ -1,0 +1,12 @@
+.venv/
+data/
+bench/tapes/
+lob_rs/target/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+# wide price matrices are derived from Yahoo data: regenerate with `python -m alphalab.study`
+reports/study/export/wide_*.parquet
+# local console logs
+reports/mm/ablation_log.txt

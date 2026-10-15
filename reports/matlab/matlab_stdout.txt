@@ -1,0 +1,35 @@
+crosscheck done
+bootstrap done
+[Warning: Table variable names that were not valid MATLAB identifiers have been modified. Since table variable names must be unique, any table variable names that happened to match
+the new identifiers also have been modified.] 
+[Warning: Table variable names that were not valid MATLAB identifiers have been modified. Since table variable names must be unique, any table variable names that happened to match
+the new identifiers also have been modified.] 
+[Warning: Failed to converge in 100 iterations during replicate 1 for gmdistribution with 2 components] 
+[> In gmcluster (line 204)
+In gmdistribution.fit (line 96)
+In fitgmdist (line 14)
+In regime_analysis (line 19)
+In run_all (line 19)] 
+[Warning: Failed to converge in 100 iterations during replicate 3 for gmdistribution with 2 components] 
+[> In gmcluster (line 204)
+In gmdistribution.fit (line 96)
+In fitgmdist (line 14)
+In regime_analysis (line 19)
+In run_all (line 19)] 
+[Warning: Failed to converge in 100 iterations during replicate 5 for gmdistribution with 2 components] 
+[> In gmcluster (line 204)
+In gmdistribution.fit (line 96)
+In fitgmdist (line 14)
+In regime_analysis (line 19)
+In run_all (line 19)] 
+regimes done
+surface done
+[Warning: Table variable names that were not valid MATLAB identifiers have been modified. Since table variable names must be unique, any
+table variable names that happened to match the new identifiers also have been modified.] 
+[Warning: Table variable names that were not valid MATLAB identifiers have been modified. Since table variable names must be unique, any
+table variable names that happened to match the new identifiers also have been modified.] 
+Starting parallel pool (parpool) using the 'Processes' profile ...
+Connected to parallel pool with 16 workers.
+parfor done
+total 54.0 s
+

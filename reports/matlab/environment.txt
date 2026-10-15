@@ -1,0 +1,17 @@
+MATLAB 26.2.0.3386108 (R2026b)
+license Statistics_Toolbox: 1
+license Distrib_Computing_Toolbox: 1
+license Financial_Toolbox: 1
+Database Toolbox 26.2
+Datafeed Toolbox 26.2
+Deep Learning Toolbox 26.2
+Financial Instruments Toolbox 26.2
+Financial Toolbox 26.2
+MATLAB 26.2
+MATLAB Compiler 26.2
+MATLAB Compiler SDK 26.2
+MATLAB Copilot 26.2
+Optimization Toolbox 26.2
+Parallel Computing Toolbox 26.2
+Reinforcement Learning Toolbox 26.2
+Statistics and Machine Learning Toolbox 26.2
