@@ -31,7 +31,7 @@ Details: [reports/study/STUDY.md](reports/study/STUDY.md).
 - Every mean-reversion family looked strong in sample and failed out of sample; the trend families did the reverse.
 - After deflating for 44 trials, **no configuration is statistically significant** (best DSR 0.15).
 - Net of a modest 5 bp one-way cost, the high-turnover reversion signals lose money even in sample.
-- This is the same lesson as the WorldQuant BRAIN exercise that started the project (in-sample Sharpe 1.74 → hold-out
+- Case study used : (in-sample Sharpe 1.74 → hold-out
   -0.44): see [reports/CASE_STUDY.md](reports/CASE_STUDY.md).
 
 **Market-making simulator** (details and caveats: [reports/mm/MM_RESULTS.md](reports/mm/MM_RESULTS.md)).
